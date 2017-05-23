@@ -1,0 +1,68 @@
+@CHARSET "ISO-8859-1";
+
+body{
+	background:beige;
+}
+
+#inicio{
+	width:100%;
+	text-align:center;
+}
+
+#login_form{
+	width:100%;
+	text-align:center;
+}
+
+#login_form label{
+	text-align:left;
+	width:10em;
+}
+#login_form input{
+	text-align:left;
+	width:10em;
+}
+
+#nuevo_equipo{
+	width:100%;
+	text-align:center;
+}
+
+#nuevo_equipo label{
+	text-align:left;
+	width:10em;
+}
+#nuevo_equipo input{
+	text-align:left;
+	width:10em;
+}
+
+.centrado{
+	width:100%;
+	text-align:center;
+}
+td{
+	padding:0.5em;
+}
+th{
+	padding:0.5em;
+	background-color:#EEEEEE;
+}
+.fila{
+	border:solid;
+	border-width:1px;
+	border-color:gray;
+}
+.fila_par{
+	background-color:AliceBlue;
+}
+.fila_impar{
+	background-color:white;
+}
+#listado{
+	width:100%;
+	text-align:center;
+}
+#menu ul li{
+	display:inline-block;
+}

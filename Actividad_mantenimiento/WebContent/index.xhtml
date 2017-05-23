@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:c="http://xmlns.jcp.org/jsf/core">
+	
+<head>
+  <title><ui:insert name="title">Default title</ui:insert></title>
+</head>
+
+<body>
+<h:outputText value="Introduce el usuario y la password"/>
+<br/>
+<h:form>
+
+		<h:outputLabel for="nombre">${msjs.nombre}</h:outputLabel>
+		<h:inputText id="nombre" value="#{usuario.nombre}"></h:inputText>
+		
+		<br/> 
+		<h:outputLabel for="password">${msjs.password}</h:outputLabel>
+		<h:inputText id="password" value="#{usuario.password}" /> 
+		<br/>
+		<h:outputLabel for="dni">${msjs.dni}</h:outputLabel>
+		<h:inputText id="dni" value="#{usuario.dni}" /> 
+		
+		<h:commandButton type="submit" value="${msjs.enviar}" action="#{usuario.}" />
+		
+	</h:form>
+
+</body>
+
+</html>
